@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>Ubicación</title>
+    <meta name="description" content="">
+    <meta name="author" content="www.buganvil.com">
+
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--[if lt IE 8]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"
+                 height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <script src="js/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <link href='./images/favicon.png' rel='icon' type='image/x-icon'/>
+
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
+
+</head>
+<body>
+<!--------------Header--------------->
+<header>
+    <script>
+        function change_route_src() {
+            var checks = document.getElementsByName("route");
+            if (checks[0].checked == true) {
+                document.getElementById('route_img').src = "images/location/route_term_auto.jpg";
+            } else if (checks[1].checked == true) {
+                document.getElementById('route_img').src = "images/location/route_sc_auto.jpg";
+            } else if (checks[2].checked == true) {
+                document.getElementById('route_img').src = "images/location/route_trini_auto.jpg";
+            }
+        }
+
+        //change_route_src();
+    </script>
+    <!--<div class="pagetop">-->
+        <!--<div class="wrap-pagetop">-->
+            <!--<div class="shareicons">-->
+                <!--<ul>-->
+                    <!--<li><a href="#"><img src="images/rss-icon.png" title="RSS"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/digg-icon.png" title="Digg"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/facebook-icon.png" title="Facebook"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/google-icon.png" title="Google+"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/twitter-icon.png" title="Twitter"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/sharethis-icon.png" title="Sharethis"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/linkedin-icon.png" title="Linkedin"/></a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div id="search">-->
+                <!--<div class="button-search"></div>-->
+                <!--<input type="text" value="Search..."-->
+                       <!--onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}"-->
+                       <!--onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="wrap-header">
+        <img src="./images/curves.png" style="width: 100%; height: 100%;"/>
+        <div id="logo"><a href="index.html"><img src="./images/logo.png"/></a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#rooms">Habitaciones</a></li>
+                <li><a href="index.html#attractives">Atractivos</a></li>
+                <li><a href="#">Ubicación</a></li>
+                <li><a href="gallery.html">Galería</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--------------Content--------------->
+<section id="content">
+    <div class="welcome">
+        <p class="padding_20">Llegar a nuestra casa es muy fácil. Verifíquelo consultando las diferentes rutas que le ofrecemos.
+            Observe que el punto de partida de la ruta esta señalado en rojo.</p>
+    </div>
+    <div class="feature">
+        <p class="radio_b"><input type="radio" name="route" onclick="change_route_src();" checked="true">&NonBreakingSpace;Desde la Terminal de Ómnibus&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+            <input type="radio" name="route" onclick="change_route_src();">&NonBreakingSpace;Desde la entrada por Santa Clara&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+            <input type="radio" name="route" onclick="change_route_src();">&NonBreakingSpace;Desde la entrada por Trinidad&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;&NonBreakingSpace;
+        </p>
+    </div>
+    <div class="feature">
+        <img id="route_img" class="map_" src="images/location/route_term_auto.jpg"/>
+    </div>
+    <br>
+</section>
+<!--------------Footer--------------->
+<footer>
+    <div class="zerogrid">
+        <div class="row block02">
+            <section class="col-1-3">
+                <div class="heading"><h2>Contáctenos</h2></div>
+                <div class="content">
+                    <p>Rosa María Díaz Gutiérrez</p>
+                    <p>e-mail: <a href="mailto:rosamaria670705@gmail.com">rosamaria670705@gmail.com</a></p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:airensofia@nauta.cu">airensofia@nauta.cu</a></p>
+                    <p>teléfono: (+53) (41) 33 6437</p>
+                    <p>celular: (+53) 52 511828</p>
+                </div>
+            </section>
+            <!--<section class="col-1-3">-->
+                <!--<div class="heading"><h2>Categories</h2></div>-->
+                <!--<div class="content">-->
+                    <!--<ul>-->
+                        <!--<li><a href="http://www.zerotheme.com">Free Html5 Templates</a></li>-->
+                        <!--<li><a href="http://www.zerotheme.com">Free Responsive Themes</a></li>-->
+                        <!--<li><a href="http://www.zerotheme.com">Free Html5 and Css3 Themes</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</section>-->
+            <!--<section class="col-1-3">-->
+                <!--<div class="heading"><h2>Popular Post</h2></div>-->
+                <!--<div class="content">-->
+                    <!--<div class="post">-->
+                        <!--<img src="images/port1.jpg"/>-->
+                        <!--<h4><a href="room.html">Lorem ipsum dolor sit amet</a></h4>-->
+
+                        <!--<p>November 11 ,2012</p>-->
+                    <!--</div>-->
+                    <!--<div class="post">-->
+                        <!--<img src="images/port2.jpg"/>-->
+                        <!--<h4><a href="room.html">Lorem ipsum dolor sit amet</a></h4>-->
+
+                        <!--<p>November 11 ,2012</p>-->
+                    <!--</div>-->
+                    <!--<div class="post">-->
+                        <!--<img src="images/port3.jpg"/>-->
+                        <!--<h4><a href="room.html">Lorem ipsum dolor sit amet</a></h4>-->
+
+                        <!--<p>November 11 ,2012</p>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+        </div>
+    </div>
+    <div class="copyright">
+        <!--<p>Copyright © 2015 - <a href="http://www.zerotheme.com/432/free-responsive-html5-css3-website-templates.html"-->
+                                 <!--target="_blank">Free Html5 Templates</a> by <a href="http://www.zerotheme.com"-->
+                                                                                <!--target="_blank">Zerotheme.com</a></p>-->
+        <p>Copyright © 2015 - Hostal El Buganvil by <a>kSoft</a></p>
+</div>
+</footer>
+</body>
+</html>

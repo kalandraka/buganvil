@@ -59,35 +59,36 @@
 <body>
 <!--------------Header--------------->
 <header>
-    <div class="pagetop">
-        <div class="wrap-pagetop">
-            <div class="shareicons">
-                <ul>
-                    <li><a href="#"><img src="images/rss-icon.png" title="RSS"/></a></li>
-                    <li><a href="#"><img src="images/digg-icon.png" title="Digg"/></a></li>
-                    <li><a href="#"><img src="images/facebook-icon.png" title="Facebook"/></a></li>
-                    <li><a href="#"><img src="images/google-icon.png" title="Google+"/></a></li>
-                    <li><a href="#"><img src="images/twitter-icon.png" title="Twitter"/></a></li>
-                    <li><a href="#"><img src="images/sharethis-icon.png" title="Sharethis"/></a></li>
-                    <li><a href="#"><img src="images/linkedin-icon.png" title="Linkedin"/></a></li>
-                </ul>
-            </div>
-            <div id="search">
-                <div class="button-search"></div>
-                <input type="text" value="Search..."
-                       onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}"
-                       onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">
-            </div>
-        </div>
-    </div>
+    <!--<div class="pagetop">-->
+        <!--<div class="wrap-pagetop">-->
+            <!--<div class="shareicons">-->
+                <!--<ul>-->
+                    <!--<li><a href="#"><img src="images/rss-icon.png" title="RSS"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/digg-icon.png" title="Digg"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/facebook-icon.png" title="Facebook"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/google-icon.png" title="Google+"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/twitter-icon.png" title="Twitter"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/sharethis-icon.png" title="Sharethis"/></a></li>-->
+                    <!--<li><a href="#"><img src="images/linkedin-icon.png" title="Linkedin"/></a></li>-->
+                <!--</ul>-->
+            <!--</div>-->
+            <!--<div id="search">-->
+                <!--<div class="button-search"></div>-->
+                <!--<input type="text" value="Search..."-->
+                       <!--onfocus="if (this.value == &#39;Search...&#39;) {this.value = &#39;&#39;;}"-->
+                       <!--onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search...&#39;;}">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
     <div class="wrap-header">
+        <img src="./images/curves.png" style="width: 100%; height: 100%;"/>
         <div id="logo"><a href="index.html"><img src="./images/logo.png"/></a></div>
         <nav>
             <ul>
-                <li><a href="index.html">Habitaciones</a></li>
-                <li><a href="single.html">Atractivos</a></li>
-                <li><a href="single.html">Galería</a></li>
-                <li><a href="single.html">Ubicación</a></li>
+                <li><a href="#rooms">Habitaciones</a></li>
+                <li><a href="#attractives">Atractivos</a></li>
+                <li><a href="#location">Ubicación</a></li>
+                <li><a href="gallery.html">Galería</a></li>
             </ul>
         </nav>
     </div>
@@ -121,8 +122,8 @@
         </div>
         <div style="clear:both; display:block; height:10px"></div>
     </div>
-    <div class="welcome">
-        <p>Inaugurado en el 2005 El Buganvil está ubicado en el centro histórico de la ciudad de Sancti Spíritus a solo
+    <div class="welcome" style="margin-top: -10px">
+        <p class="welcome-paragraph">Inaugurado en el 2009 El Buganvil está ubicado en el centro histórico de la ciudad de Sancti Spíritus a solo
             50 metros de la antigua Plaza de San Francisco hoy Parque Serafín Sánchez. Inmerso en una atmósfera urbana y
             natural por la belleza del entorno que la rodea la cual se aprecia desde su auténtico mirador, el Hostal
             ofrece un ambiente de absoluta calma y bienestar donde tendrá una inolvidable experiencia mediante la
@@ -134,7 +135,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="featurette">
+    <div class="featurette" id="rooms">
         <img class="featurette-image pull-right" src="images/rooms.png">
 
         <h2 class="featurette-heading">Habitaciones. <span
@@ -158,7 +159,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="featurette">
+    <div class="featurette" id="others">
         <img class="featurette-image pull-left" src="images/terraza.png">
 
         <h2 class="featurette-heading">Otros servicios. <span
@@ -183,7 +184,7 @@
 
     <hr class="featurette-divider">
 
-    <div class="featurette">
+    <div class="featurette" id="location">
         <img class="featurette-image pull-right" src="images/location.png">
 
         <h2 class="featurette-heading">Ubicación. <span
@@ -191,69 +192,60 @@
 
         <p class="featurette-content">El Hostal goza de una de las ubicaciones más privilegiadas en el centro de la ciudad gracias
             a lo cual podrá conocer Sancti Spíritus cómodamente andando y visitar los lugares de interés
-            turísticos más importantes.</p>
+            turístico más importantes.&nbsp;&nbsp;</p>
+        <a href="location.html" class="button secondary small radius">Ver más&raquo;</a>
     </div>
 
     <hr class="featurette-divider">
 
+    <div class="featurette" id="attractives">
+        <img class="featurette-image pull-left" src="images/yayabo.png">
+
+        <h2 class="featurette-heading">Atractivos Turísticos. <span
+                class="muted">Sancti Spíritus te proporciona todo lo que necesitas.</span></h2>
+
+        <p class="featurette-content">Nuestra localización resulta un inmejorable punto de partida para apreciar las más importantes joyas arquitectónicas de la ciudad.
+            A solo 125 metros del parque Serafín Sánchez, 325 metros de la Iglesia Parroquial Mayor y 475 metros del Puente Yayabo.&nbsp;&nbsp;</p>
+        <a href="citygallery.html" class="button secondary small radius">Ver más&raquo;</a>
+    </div>
+<br>
     <!-- /END THE FEATURETTES -->
     </div>
 
-    <div>
-        <p>Inaugurado en el 2005 El Buganvil está ubicado en el Centro Histórico de la ciudad de Sancti Spíritus a solo
-            50 metros de la antigua Plaza de San Francisco hoy Parque Serafín Sánchez. Inmerso en una atmósfera urbana y
-            natural por la belleza del entorno que la rodea la cual se aprecia desde su auténtico mirador, el Hostal
-            ofrece un ambiente de absoluta calma y bienestar donde tendrá una inolvidable experiencia mediante la
-            exigencia en cada detalle, su estilo, la personalización del servicio y obsesión por hacer su estancia más
-            placentera.</p>
-    </div>
 </section>
 <!--------------Footer--------------->
 <footer>
     <div class="zerogrid">
         <div class="row block02">
-            <section class="col-1-3">
-                <div class="heading"><h2>Contáctenos</h2></div>
-                <div class="content">
-                    <p>Rosa María Díaz Gutierrez</p>
-                    <p>e-mail: rosamaria670705@gmail.com</p>
-                    <p>teléfono: (53)(41)336437</p>
-                    <p>celular: 52511828</p>
-                </div>
-            </section>
             <!--<section class="col-1-3">-->
-                <!--<div class="heading"><h2>Categories</h2></div>-->
+                <!--<div class="heading"><h2>Servicios</h2></div>-->
                 <!--<div class="content">-->
                     <!--<ul>-->
-                        <!--<li><a href="http://www.zerotheme.com">Free Html5 Templates</a></li>-->
-                        <!--<li><a href="http://www.zerotheme.com">Free Responsive Themes</a></li>-->
-                        <!--<li><a href="http://www.zerotheme.com">Free Html5 and Css3 Themes</a></li>-->
+                        <!--<li><a href="#rooms">Habitaciones</a></li>-->
+                        <!--<li><a href="#attractives">Atractivos</a></li>-->
+                        <!--<li><a href="#location">Ubicación</a></li>-->
+                        <!--<li><a href="gallery.html">Galería</a></li>-->
                     <!--</ul>-->
                 <!--</div>-->
             <!--</section>-->
             <!--<section class="col-1-3">-->
-                <!--<div class="heading"><h2>Popular Post</h2></div>-->
+                <!--<div class="heading"><h2>Otros</h2></div>-->
                 <!--<div class="content">-->
-                    <!--<div class="post">-->
-                        <!--<img src="images/port1.jpg"/>-->
-                        <!--<h4><a href="room.html">Lorem ipsum dolor sit amet</a></h4>-->
-
-                        <!--<p>November 11 ,2012</p>-->
-                    <!--</div>-->
-                    <!--<div class="post">-->
-                        <!--<img src="images/port2.jpg"/>-->
-                        <!--<h4><a href="room.html">Lorem ipsum dolor sit amet</a></h4>-->
-
-                        <!--<p>November 11 ,2012</p>-->
-                    <!--</div>-->
-                    <!--<div class="post">-->
-                        <!--<img src="images/port3.jpg"/>-->
-                        <!--<h4><a href="room.html">Lorem ipsum dolor sit amet</a></h4>-->
-
-                        <!--<p>November 11 ,2012</p>-->
-                    <!--</div>-->
+                    <!--<ul>-->
+                        <!--<li><a href="#others">Servicios adicionales</a></li>-->
+                    <!--</ul>-->
                 <!--</div>-->
             <!--</section>-->
+            <section class="col-1-3">
+                <div class="heading"><h2>Contáctenos</h2></div>
+                <div class="content">
+                    <p>Rosa María Díaz Gutiérrez</p>
+                    <p>e-mail: <a href="mailto:rosamaria670705@gmail.com">rosamaria670705@gmail.com</a></p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:airensofia@nauta.cu">airensofia@nauta.cu</a></p>
+                    <p>teléfono: (+53) (41) 33 6437</p>
+                    <p>celular: (+53) 52 511828</p>
+                </div>
+            </section>
         </div>
     </div>
     <div class="copyright">
